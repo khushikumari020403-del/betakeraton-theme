@@ -1,0 +1,35 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.contactbox {
+      .contactbox-cont {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+
+        p.header {
+          font-weight: 600;
+        }
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        img {
+          margin-right: 15px;
+          margin-left: 20px;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+

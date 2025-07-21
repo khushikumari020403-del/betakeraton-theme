@@ -1,0 +1,153 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+html :where(.wp-block) {
+  max-width: 100%;
+}
+body.wp-admin {
+  .block-inner-content {
+    max-width: 840px;
+    margin: auto;
+  }
+}
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.prodfordeler {
+      margin-top: 100px;
+      background: #361700;
+
+      h2 {
+        font-size: 22px;
+        color: #673918;
+        font-weight: 200;
+        margin-bottom: 50px;
+      }
+
+      .ikon-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 40px;
+        grid-column-gap: 16vw;
+
+        img {
+          height: 45px;
+          width: auto;
+          margin-bottom: 15px;
+        }
+
+        p {
+          color: #673918;
+          font-size: 16px !important;
+        }
+      }
+
+      &.underside {
+        margin: auto;
+        max-width: 100%;
+        padding: 0;
+        background: transparent;
+
+        .ikon-grid {
+          grid-column-gap: 6vw;
+        }
+      }
+
+      &:not(.underside) {
+        padding: 100px 0;
+
+        h2 {
+          color: #F6DFA4;
+        }
+        p {
+          color: #F6DFA4;
+        }
+        .grid_foto {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 11vw;
+
+          .grid {
+            .ikon-grid {
+              grid-column-gap: 20px;
+              grid-template-columns: 1fr 1fr;
+            }
+
+          }
+
+          .foto {
+            img {
+              max-height: 520px;
+              width: auto;
+            }
+          }
+        }
+
+        .prf-video {
+          margin-top: 100px;
+          position: relative;
+
+          h2 {
+            font-size: 22px;
+            color: #F6DFA4;
+            font-weight: 200;
+            margin-bottom: 50px;
+            max-width: 450px;
+          }
+
+          // Video
+          video {
+            width: 100%;
+              height: auto;
+          }
+
+          .overvideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            .overvideo-inner {
+              height: 100%;
+            }
+
+            .overvideo-inner-content {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+              h2,h3,h4,h5,h6 {
+                color: #fff;
+                font-weight: 800;
+                font-size: 3vw;
+              }
+              img {
+                width: 76px;
+                height: auto;
+
+              }
+
+              .inner-content-txt {
+                margin-bottom: 5vw;
+              }
+            }
+          }
+        }
+      }
+      &.prodside {
+        background: #f6dfa4;
+        margin-top: -30px;
+        padding-top: 130px;
+
+        h2, p {
+          color: #673918 !important;
+        }
+      }
+    }
+  }
+}
+

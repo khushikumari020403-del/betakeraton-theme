@@ -1,0 +1,57 @@
+$blaa: #1a1834;
+$beige: #f4ecdc;
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.bildegalleri {
+      .product-media-container {
+        grid-area: media;
+
+        .product-media {
+          display: flex;
+          overflow-x: inherit;
+          position: sticky;
+          left: 0;
+          top: 128px;
+        }
+
+        .product-carousel {
+          display: grid;
+          grid-template-columns: 3rem minmax(300px, 488px);
+          column-gap: 1.5rem;
+        }
+
+        .product-carousel__thumbnail-container {
+          width: 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .product-carousel__thumbnail {
+          position: relative;
+          margin-bottom: 1rem;
+          width: 3rem;
+          height: 3.75rem;
+          overflow: hidden;
+          cursor: pointer;
+          transition: opacity 0.25s ease-in-out;
+        }
+
+        .product-carousel__thumbnail img {
+          object-fit: cover;
+          object-position: center center;
+          width: 100%;
+          height: 100%;
+        }
+
+        .lazyloaded {
+          display: block;
+          opacity: 1;
+          transition: opacity 0.35s ease-in-out;
+        }
+      }
+    }
+  }
+}

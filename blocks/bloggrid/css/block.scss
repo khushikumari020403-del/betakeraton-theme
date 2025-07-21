@@ -1,0 +1,94 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.bloggrid {
+
+      .block-inner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 50px auto;
+
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .bloggrid-post {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+
+    &:hover {
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+    }
+
+    & > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    .bgbilde {
+      position: relative;
+      height: 225px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      .cat {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        .kategoriknapp {
+          background: -webkit-linear-gradient(left, #004bba, #00b6d4 50%);
+          border-radius: 30px;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 400;
+          padding: 8px 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .bloggrid-txt {
+      padding: 25px 40px 30px 40px;
+      text-align: center;
+
+      h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      a {
+        color: #00bdd6;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &::after {
+          content: url('../inc/gfx/readmore.png');
+          padding-left: 3px;
+        }
+      }
+    }
+  }
+    }
+  }
+}
+

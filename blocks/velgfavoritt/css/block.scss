@@ -1,0 +1,124 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+html :where(.wp-block) {
+  max-width: 100%;
+}
+body.wp-admin {
+  .block-inner-content {
+    max-width: 840px;
+    margin: auto;
+  }
+}
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.velgfavoritt {
+      margin-top: 100px;
+      margin-bottom: 100px;
+
+      h2 {
+        font-size: 22px;
+        color: #673918;
+        font-weight: 200;
+        margin-bottom: 30px;
+      }
+
+      .velgfavoritt-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+          grid-column-gap: 50px;
+          grid-row-gap: 0;
+
+        .prod-content {
+          position: relative;
+
+          a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+
+          &:hover {
+            .pakke-outer {
+              background: rgba(185,164,149,0.25);
+              transition: all .5s ease;
+            }
+          }
+        }
+
+        .pakke-outer {
+          background: rgba(185,164,149,0.13);
+          border-radius: 25px;
+          text-align: center;
+          padding: 100px;
+          transition: all .5s ease;
+
+          img {
+            max-height: 250px;
+            width: auto;
+          }
+          
+        }
+        .header-outer {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+
+          .header-main {
+            margin-right: 15%;
+
+            h4 {
+              font-size: 18px;
+              font-weight: 200;
+              margin-bottom: 0;
+            }
+            h3 {
+              font-size: 40px;
+              font-weight: 300;
+            }
+            h3,h4,p {
+              color: #673918;
+            }
+          }
+
+          .header-pitch {
+            p {
+              font-size: 16px;
+              color: #673918;
+            }
+          }
+        }
+        .pakke-facts {
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              display: inline;
+              color: #673918;
+              font-size: 14px;
+
+              &:not(:last-of-type) {
+                border-right: 1px solid #673918;
+              }
+
+              &:not(:first-of-type) {
+                padding: 0 10px;
+              }
+
+              &:first-of-type {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

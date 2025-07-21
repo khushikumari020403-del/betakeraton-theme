@@ -1,0 +1,65 @@
+{
+    "key": "group_6442475a87cfc",
+    "title": "Sideinnstillinger",
+    "fields": [
+        {
+            "key": "field_6442475aa9994",
+            "label": "Skjul punkter over footer",
+            "name": "skjul_pkt_footer",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Skjul",
+            "ui_off_text": "Vis",
+            "ui": 1
+        },
+        {
+            "key": "field_64424b9e91f89",
+            "label": "Hvit eller gul",
+            "name": "pkt_bgfarge",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Velg bakgrunnsfarge",
+            "default_value": 0,
+            "ui_on_text": "Gul",
+            "ui_off_text": "Hvit",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1682066377
+}

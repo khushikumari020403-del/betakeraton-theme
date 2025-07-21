@@ -1,0 +1,76 @@
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.beforeafter {
+      .block-inner-content {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        padding: 50px 0;
+
+        .mainheader {
+          margin-bottom: 20px;
+
+          & > h2 {
+            font-weight: 800;
+
+            @media only screen and (min-width: 1200px) {
+              font-size: 2.5rem;
+            }
+          }
+        }
+
+        .beer-slider {
+          border-radius: 15px;
+          max-width: 650px;
+          margin-top: 20px;
+        }
+
+        [type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none !important;
+          height: 48px;
+          width: 80px;
+          border-radius: 2px;
+          display: block;
+        }
+
+        .beer-handle {
+          top: 20%;
+          background: transparent;
+
+          &:before {
+            content: url("../blocks/beforeafter/img/pil_for.svg");
+            height: 30px;
+            width: 30px;
+            left: -20px;
+            transform: none;
+            border: none;
+          }
+
+          &:after {
+            content: url("../blocks/beforeafter/img/pil_etter.svg");
+            height: 30px;
+            width: 30px;
+            left: 35px;
+            transform: none;
+            border: none;
+          }
+        }
+
+        .beer-range:focus ~ .beer-handle {
+          background: transparent;
+          box-shadow: none;
+        }
+
+        .beer-reveal {
+          border-right: 3px solid #fff;
+        }
+
+        .beer-slider[data-beer-label]:after,
+        .beer-reveal[data-beer-label]:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

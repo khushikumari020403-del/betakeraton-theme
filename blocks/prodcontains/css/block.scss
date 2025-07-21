@@ -1,0 +1,192 @@
+$blaa: #1a1834;
+$beige: #f4ecdc;
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.prodcontains {
+      @media only screen and (max-width: 767px) {
+        .big-screen {
+          display: none;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .small-screen {
+          display: none;
+        }
+      }
+
+      .block-inner-content {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        padding: 50px 0;
+
+        .mainheader {
+          margin-bottom: 20px;
+
+          & > h2 {
+            font-weight: 800;
+
+            @media only screen and (min-width: 1200px) {
+              font-size: 2.5rem;
+            }
+          }
+        }
+
+        .biheader {
+          margin-bottom: 20px;
+
+          p {
+            font-weight: 300;
+            @media only screen and (min-width: 768px) {
+              font-size: 22px;
+            }
+            strong {
+              font-weight: 600;
+            }
+          }
+        }
+
+        .bestillbutton {
+          display: inline-block;
+          margin-top: 40px;
+          background: -webkit-linear-gradient(left, #004bba, #00b6d4 65%);
+          border: none;
+          border-radius: 30px;
+          height: 42.5px;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 10px 20px;
+          text-decoration: none;
+
+          &:hover {
+            background: -webkit-linear-gradient(left, #004bba, #00b6d4 99%);
+            transition: all 0.5s ease;
+            box-shadow: 5px 5px 5px rgb(0 0 0 / 15%);
+          }
+        }
+      }
+      .steps-outer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .step1,
+        .step2 {
+          max-height: 370px;
+
+          & > img {
+            height: 100%;
+            width: auto;
+          }
+        }
+
+        .step {
+          position: relative;
+          .step-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            .step-inner-content {
+              text-align: center;
+              margin-top: 20px;
+
+              .sirkel-outer {
+                width: 140px;
+                height: auto;
+                margin: auto;
+                position: relative;
+
+                .sirkel-txt {
+                  position: absolute;
+                  top: 40px;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+
+                  h3 {
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-bottom: -5px;
+                  }
+
+                  h2 {
+                    color: #00bdd6;
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                  }
+                }
+              }
+
+              h4 {
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-top: 20px;
+              }
+
+              .step-list {
+                ul {
+                  list-style-type: none;
+                  color: #fff;
+                  text-align: left;
+                  max-width: 90%;
+                  margin: auto;
+
+                  li {
+                    line-height: 24px;
+
+                    &:before {
+                      content: url("../img/bullet.svg");
+                      width: 23px;
+                      height: 23px;
+                      display: inline-block;
+                      padding-right: 10px;
+                    }
+                  }
+                }
+
+                &.step2-list {
+                  ul {
+                    max-width: 80%;
+                  }
+                }
+              }
+            }
+          }
+
+          // &.step1 {
+          //  .step-inner {
+          //    margin-left: -7.4vw;
+          //    @media only screen and (min-width: 1140px) {
+          //      margin-left: 150px;
+          //    }
+          //  }
+          // }
+
+          // &.step2 {
+          //  .step-inner {
+
+          //    @media only screen and (min-width: 1140px) {
+          //      margin-right: 200px;
+          //    }
+          //  }
+          // }
+        }
+
+        .step1 {
+          text-align: right;
+          margin-right: -27.5px;
+        }
+
+        .step2 {
+          margin-left: -27.5px;
+        }
+      }
+    }
+  }
+}

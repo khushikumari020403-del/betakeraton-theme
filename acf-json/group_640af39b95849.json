@@ -1,0 +1,555 @@
+{
+    "key": "group_640af39b95849",
+    "title": "Block: Forsideområde på topp",
+    "fields": [
+        {
+            "key": "field_640e2a1b01831",
+            "label": "Tekst og bilde",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64483450583a0",
+            "label": "Bakkgrunnsvideo",
+            "name": "djj_ftp_bgvid",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_640af39b3d62a",
+            "label": "Hovedoverskrift",
+            "name": "djj_fpt_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_640af53b3d62b",
+            "label": "Hovedbilde",
+            "name": "djj_fpt_img",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Hvis bilde ikke er valgt, vises standardbilde.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64105665baa09",
+            "label": "Rabatt-tekst",
+            "name": "djj_fpt_rabatt_tekst",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Legg til rad",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64105687baa0a",
+                    "label": "Tekst",
+                    "name": "rabatt_txt",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64105665baa09"
+                },
+                {
+                    "key": "field_641056a0baa0b",
+                    "label": "Type tekst",
+                    "name": "type_tekst",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "vanlig": "vanlig",
+                        "gjennomstrek": "gjennomstrek",
+                        "rod": "rod"
+                    },
+                    "default_value": "vanlig",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_64105665baa09"
+                },
+                {
+                    "key": "field_641056d0baa0c",
+                    "label": "Linjeskift etter tekst",
+                    "name": "linjeskift_etter_txt",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "Ja",
+                    "ui_off_text": "Nei",
+                    "ui": 1,
+                    "parent_repeater": "field_64105665baa09"
+                }
+            ]
+        },
+        {
+            "key": "field_640af55d71b61",
+            "label": "Vis rabattboble",
+            "name": "vis_rabattboble",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Ja",
+            "ui_off_text": "Nei",
+            "ui": 1
+        },
+        {
+            "key": "field_640b13d8927af",
+            "label": "Nå-pris",
+            "name": "djj_fpt_naa",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_640af55d71b61",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "149,-",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_640b14c1d2995",
+            "label": "Før-pris",
+            "name": "djj_fpt_for",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_640af55d71b61",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 299,
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_640e2a3101832",
+            "label": "Skjema",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_640e2a3b01833",
+            "label": "Skjema ID",
+            "name": "djj_fpt_formid",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6447b014521e2",
+            "label": "Innledningstekst",
+            "name": "djj_fpt_skjema_head",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_640e2adfc7d5d",
+            "label": "Overstyr skjemaparametere",
+            "name": "djj_fpt_params",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Legg til rad",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_640e2affc7d5e",
+                    "label": "Parameternavn",
+                    "name": "djj_fpt_pname",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Sett aktuelt skjemafelt til å kunne bli dynamisk utfylt, sammen med et feltnavn. Dette navnet brukes her.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_640e2adfc7d5d"
+                },
+                {
+                    "key": "field_640e2b35c7d5f",
+                    "label": "Parameterverdi",
+                    "name": "djj_fpt_pvalue",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_640e2adfc7d5d"
+                }
+            ]
+        },
+        {
+            "key": "field_64103a9b02a46",
+            "label": "Overstyr vilkårstekst",
+            "name": "djj_fpt_vilktxt",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "VIRKER IKKE. Skru på hvis vilkårstekst skal erstattes i skjemaet. Nyttig ved kampanjer, der også produktkode skiftes ut.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Ja",
+            "ui_off_text": "Nei",
+            "ui": 1
+        },
+        {
+            "key": "field_64103ae702a47",
+            "label": "FeltID vilkårstekst",
+            "name": "djj_fpt_feltid",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64103a9b02a46",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64103afe02a48",
+            "label": "Ny vilkårstekst",
+            "name": "djj_fpt_vilkartxt",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64103a9b02a46",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_641234e4a0f3f",
+            "label": "Nedtelling",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_641234f0a0f40",
+            "label": "Vis nedtelling",
+            "name": "djj_fpt_visnedt",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Vis",
+            "ui_off_text": "Skjul",
+            "ui": 1
+        },
+        {
+            "key": "field_6412351ba0f41",
+            "label": "Tell ned fra",
+            "name": "djj_ftp_tell_ned_fra",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "Antall timer telleren skal telle ned fra",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6447b54677971",
+            "label": "Tekst",
+            "name": "djj_fpt_cntdn_txt",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/forsidehoved"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1682453603
+}

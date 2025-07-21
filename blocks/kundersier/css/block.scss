@@ -1,0 +1,54 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.kundersier {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .block-inner-content {
+      h2 {
+        font-size: 53px;
+
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 75px;
+
+      }
+    }
+
+    .tallene {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 75px;
+
+      h4 {
+        font-size: 56px;
+        font-weight: 500;
+
+        span {
+          font-size: 31px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .lenke {
+      text-align: center;
+      padding: 0 20%;
+
+      a {
+        font-size: 25px;
+        color: #673918;
+
+      }
+    }
+  }
+  }
+}
+

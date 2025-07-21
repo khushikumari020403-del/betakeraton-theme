@@ -1,0 +1,96 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    &.ingrediensliste {
+
+      .block-inner-content {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0;
+
+    .mainheader {
+      margin-bottom: 40px;
+
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+
+      & > h2 {
+        font-weight: 800;
+
+        @media only screen and (min-width: 1200px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .liste-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      // @media only screen and (max-width: 767px) {
+      //  grid-template-columns: 1fr;
+      // }
+
+      .liste-img {
+        padding-right: 20px;
+      }
+
+      .liste-liste {
+        text-align: left;
+
+        h4 {
+          font-weight: 600;
+          font-size: 22px;
+          margin-bottom: 20px;
+
+          @media only screen and (max-width: 767px) {
+            font-size: 18px;
+          }
+        }
+
+        ul {
+          list-style-type: none;
+          list-style-position: outside;
+          color: #3d3b3f;
+          text-align: left;
+          max-width: 90%;
+          padding-left: 0;
+
+            @media only screen and (max-width: 767px) {
+              padding-left: 10px;
+            }
+
+            li {
+              line-height: 24px;
+              display: flex;
+
+              @media only screen and (max-width: 767px) {
+                font-size: 14px;
+                line-height: 17px
+              }
+
+              &:before {
+                content: url('../blocks/ingrediensliste/img/bullet.svg');
+                width: 23px;
+                min-width: 23px;
+                height: 23px;
+                display: inline-block;
+                padding-right: 10px;
+              }
+            }
+            
+        }
+      }
+    }
+  }
+
+    }
+  }
+}
+

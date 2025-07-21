@@ -1,0 +1,36 @@
+$blaa: #1A1834;
+$beige: #F4ECDC;
+
+
+// WP-admin
+.acf-block-preview {
+  .container {
+    .block-inner-content {
+      max-width: 1140px;
+      margin: auto;
+    }
+    &.alignfull {
+      margin: 32px calc(50% - 50vw);
+      max-width: 100vw;
+      width: 100vw;
+    }
+    .fullimgtxt-inner {
+      display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+
+        .fullimgtxt-txt {
+          color: #fff;
+
+          h1,h2,h3,h4,h5 {
+            font-weight: 300;
+
+            strong {
+              font-weight: 800;
+            }
+          }
+        }
+    }
+  }
+}
+

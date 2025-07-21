@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 121 25" style="enable-background:new 0 0 121 25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F6DFA4;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#673918;}
+	.st3{fill:none;}
+	.st4{fill:none;stroke:#F6DFA4;stroke-dasharray:2,1;}
+	.st5{fill:none;stroke:#F6DFA4;}
+</style>
+<g>
+	<g id="Group_674" transform="translate(0.185)">
+		<circle id="Ellipse_3" class="st0" cx="12.315" cy="12.5" r="12.5"/>
+		<g class="st1">
+			<path class="st2" d="M13.129,8.273V17h-1.321V9.594h-0.051l-2.088,1.363V9.696l2.177-1.424H13.129z"/>
+		</g>
+	</g>
+	<g id="Group_675" transform="translate(96.385)">
+		<g id="Ellipse_3-2" transform="translate(-0.385)">
+			<circle class="st3" cx="12.5" cy="12.5" r="12.5"/>
+			<circle class="st4" cx="12.5" cy="12.5" r="12"/>
+		</g>
+		<g class="st1">
+			<path class="st0" d="M8.775,17v-0.954l2.953-3.06c0.315-0.332,0.576-0.624,0.782-0.875c0.205-0.252,0.359-0.491,0.462-0.719
+				c0.103-0.227,0.153-0.469,0.153-0.724c0-0.29-0.068-0.541-0.204-0.753c-0.137-0.211-0.323-0.375-0.559-0.489
+				c-0.235-0.115-0.501-0.173-0.797-0.173c-0.312,0-0.585,0.063-0.818,0.191c-0.232,0.128-0.412,0.309-0.537,0.541
+				c-0.125,0.233-0.188,0.506-0.188,0.818H8.766c0-0.531,0.122-0.995,0.366-1.394c0.245-0.397,0.58-0.706,1.006-0.927
+				c0.427-0.22,0.911-0.33,1.453-0.33c0.549,0,1.032,0.108,1.451,0.326c0.419,0.217,0.746,0.513,0.982,0.887
+				c0.235,0.373,0.354,0.794,0.354,1.263c0,0.324-0.061,0.641-0.181,0.95c-0.121,0.311-0.331,0.654-0.629,1.034
+				c-0.298,0.379-0.713,0.838-1.244,1.377l-1.734,1.815v0.064h3.929V17H8.775z"/>
+		</g>
+	</g>
+	<line id="Line_102" class="st5" x1="95.5" y1="12.5" x2="25" y2="12.5"/>
+</g>
+</svg>
